@@ -1,115 +1,94 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html,
 body {
-  margin: 0;
-  min-height: 100%;
+    margin: 0;
+    height: 100%;
 }
 
 body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+    background: #FAF8F2;
+    color: #00205B;
+    font-family: "Helvetica Neue", Arial, sans-serif;
 
-  background: #FAF8F2;
-  color: #00205B;
-
-  font-family: "Helvetica Neue", Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
 .landing {
-  flex: 1;
+    flex: 1;
 
-  width: min(92%, 1000px);
-  margin: 0 auto;
-  padding: 12vh 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+    text-align: center;
+
+    padding: 40px 20px;
 }
 
 .logo {
-  display: block;
-  width: min(760px, 88vw);
-  height: auto;
+    width: min(600px, 70vw);
+    height: auto;
 }
 
 .tagline {
-  margin: 34px 0 0;
+    margin-top: 28px;
 
-  color: #4A6A8A;
+    color: #58779B;
 
-  font-size: clamp(18px, 2vw, 28px);
-  font-weight: 400;
-  letter-spacing: 0.01em;
+    font-size: 1.7rem;
+    font-weight: 400;
 }
 
 .contact-button {
-  display: inline-block;
+    margin-top: 42px;
 
-  margin-top: 54px;
-  padding: 18px 54px;
-  min-width: 250px;
+    background: #00205B;
+    color: white;
 
-  border-radius: 10px;
+    text-decoration: none;
 
-  background: #00205B;
-  color: #FFFFFF;
+    padding: 18px 54px;
 
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: 500;
+    border-radius: 10px;
 
-  transition:
-    opacity 0.2s ease,
-    transform 0.2s ease;
+    font-size: 1.3rem;
+
+    transition: opacity .2s ease;
 }
 
 .contact-button:hover {
-  opacity: 0.9;
-  transform: translateY(-1px);
-}
-
-.contact-button:focus-visible {
-  outline: 3px solid #4A6A8A;
-  outline-offset: 4px;
+    opacity: .9;
 }
 
 footer {
-  padding: 24px 20px 36px;
+    text-align: center;
 
-  text-align: center;
-  color: #00205B;
+    padding: 24px;
 
-  font-size: 14px;
+    color: #00205B;
+
+    font-size: 14px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
 
-  .landing {
-    padding-top: 14vh;
-  }
+    .logo {
+        width: 88vw;
+    }
 
-  .logo {
-    width: min(520px, 94vw);
-  }
+    .tagline {
+        font-size: 1.2rem;
+        line-height: 1.5;
+    }
 
-  .tagline {
-    margin-top: 28px;
-    line-height: 1.5;
-  }
+    .contact-button {
+        width: 240px;
+        padding: 16px 0;
+    }
 
-  .contact-button {
-    margin-top: 42px;
-    min-width: 210px;
-    padding: 16px 40px;
-  }
-
-  footer {
-    font-size: 12px;
-  }
 }
