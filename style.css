@@ -22,6 +22,8 @@ body {
 .landing {
     flex: 1;
 
+    position: relative;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -92,6 +94,54 @@ body {
     outline-offset: 4px;
 }
 
+
+/* Toronto Global Forum Partner */
+
+.tgf-partner {
+    position: absolute;
+
+    bottom: 22px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 18px;
+
+    width: max-content;
+}
+
+.tgf-logo {
+    display: block;
+
+    width: 125px;
+    height: auto;
+}
+
+.tgf-divider {
+    width: 1px;
+    height: 44px;
+
+    background: rgba(0, 32, 91, 0.35);
+}
+
+.tgf-text {
+    margin: 0;
+
+    color: #00205B;
+
+    text-align: left;
+
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.45;
+
+    letter-spacing: 0.01em;
+}
+
+
 footer {
     padding: 22px 20px 30px;
 
@@ -102,6 +152,7 @@ footer {
     font-size: 14px;
     font-weight: 400;
 }
+
 
 @keyframes fadeIn {
 
@@ -115,6 +166,7 @@ footer {
         transform: translateY(0);
     }
 }
+
 
 @media (max-width: 768px) {
 
@@ -138,6 +190,24 @@ footer {
         padding: 15px 34px;
 
         font-size: 1rem;
+    }
+
+    .tgf-partner {
+        bottom: 18px;
+
+        gap: 12px;
+    }
+
+    .tgf-logo {
+        width: 100px;
+    }
+
+    .tgf-divider {
+        height: 36px;
+    }
+
+    .tgf-text {
+        font-size: 11px;
     }
 
     footer {
