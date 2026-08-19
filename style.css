@@ -114,8 +114,8 @@ body {
 .tgf-partner-image {
     display: block;
 
-    width: 190px;
-    max-width: 70vw;
+    width: 380px;
+    max-width: 80vw;
     height: auto;
 }
 
@@ -181,8 +181,8 @@ footer {
     }
 
     .tgf-partner-image {
-        width: 165px;
-        max-width: 70vw;
+        width: 330px;
+        max-width: 85vw;
     }
 
     footer {
