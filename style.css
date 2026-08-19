@@ -100,13 +100,13 @@ body {
 .tgf-partner {
     position: absolute;
 
-    bottom: 18px;
+    bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
 
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 
     width: 100%;
 }
@@ -114,11 +114,13 @@ body {
 .tgf-partner-image {
     display: block;
 
-    width: 330px;
-    max-width: 80vw;
+    width: 190px;
+    max-width: 70vw;
     height: auto;
 }
 
+
+/* Footer */
 
 footer {
     padding: 22px 20px 30px;
@@ -131,6 +133,8 @@ footer {
     font-weight: 400;
 }
 
+
+/* Animation */
 
 @keyframes fadeIn {
 
@@ -145,6 +149,8 @@ footer {
     }
 }
 
+
+/* Mobile */
 
 @media (max-width: 768px) {
 
@@ -171,12 +177,12 @@ footer {
     }
 
     .tgf-partner {
-        bottom: 16px;
+        bottom: 8px;
     }
 
     .tgf-partner-image {
-        width: 280px;
-        max-width: 88vw;
+        width: 165px;
+        max-width: 70vw;
     }
 
     footer {
