@@ -100,7 +100,7 @@ body {
 .tgf-partner {
     position: absolute;
 
-    bottom: 22px;
+    bottom: 18px;
     left: 50%;
     transform: translateX(-50%);
 
@@ -108,37 +108,15 @@ body {
     align-items: center;
     justify-content: center;
 
-    gap: 18px;
-
-    width: max-content;
+    width: 100%;
 }
 
-.tgf-logo {
+.tgf-partner-image {
     display: block;
 
-    width: 160px;
+    width: 330px;
+    max-width: 80vw;
     height: auto;
-}
-
-.tgf-divider {
-    width: 1px;
-    height: 44px;
-
-    background: rgba(0, 32, 91, 0.35);
-}
-
-.tgf-text {
-    margin: 0;
-
-    color: #00205B;
-
-    text-align: left;
-
-    font-size: 13px;
-    font-weight: 500;
-    line-height: 1.45;
-
-    letter-spacing: 0.01em;
 }
 
 
@@ -193,21 +171,12 @@ footer {
     }
 
     .tgf-partner {
-        bottom: 18px;
-
-        gap: 12px;
+        bottom: 16px;
     }
 
-    .tgf-logo {
-        width: 130px;
-    }
-
-    .tgf-divider {
-        height: 36px;
-    }
-
-    .tgf-text {
-        font-size: 11px;
+    .tgf-partner-image {
+        width: 280px;
+        max-width: 88vw;
     }
 
     footer {
